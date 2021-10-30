@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      header {
+        display: flex;
+        height: 3rem;
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: #fff;
+      }
+      header a {
+        text-decoration: none;
+      }
+      header .left {
+        flex: 1;
+      }
+      .left img {
+        width: 6rem;
+        /* margin-top: 1rem; */
+        margin-left: 1rem;
+        height: 1rem;
+        line-height: 1rem;
+      }
+      header .right,
+      .left {
+        margin-top: 1rem;
+      }
+      header .right {
+        margin-left: 5.5rem;
+        width: 50%;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+      }
+      .r img:nth-of-type(1) {
+        flex: 1;
+        width: 1.2rem;
+        height: 1.5rem;
+      }
+      .r img,
+      .r2 img {
+        margin-right: 1rem;
+      }
+      .r2 a img:nth-of-type(1) {
+        flex: 2;
+        width: 5.5rem;
+        height: 1.5rem;
+      }
+
+      .r3 img:nth-of-type(1) {
+        margin-top: -1rem;
+        flex: 1;
+        width: 2.8rem;
+        height: 3rem;
+      }
+      main {
+        width: 100%;
+        height: 100%;
+        /* background-color: rgb(41, 38, 38); */
+      }
+      main .m {
+        display: none;
+        width: 100%;
+        height: 10rem;
+        padding-left: 2rem;
+        /* background-color: pink; */
+      }
+      .m li {
+        list-style: none;
+        width: 22rem;
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 0.85rem;
+        border-bottom: 1px solid #ccc;
+      }
+      .m li a {
+        text-decoration: none;
+        color: black;
+      }
+      .m li img {
+        height: 0.5rem;
+        margin-left: 17rem;
+      }
+      footer {
+        margin: 0 auto;
+        text-align: center;
+        height: 7rem;
+        /* background-color: #ccc; */
+        box-sizing: border-box;
+      }
+      footer a img {
+        margin-top: 1rem;
+        width: 2rem;
+        height: 2rem;
+      }
+      footer span {
+        font-family: "微软雅黑";
+        font-size: 0.6rem;
+        margin-right: 1rem;
+      }
+      footer i img {
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-top: 0.3rem;
+      }
+      .chexing {
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 100%;
+      }
+      .chexing .cx {
+        /* background-color: #ccc; */
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #ccc;
+      }
+      .chexing .chex {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .chex ul li {
+        position: relative;
+        margin-top: 3rem;
+        list-style: none;
+        flex: 1;
+        width: 100%;
+        height: 10rem;
+        line-height: 2rem;
+        /* background-color: pink; */
+        z-index: 99;
+      }
+      .chex li img {
+        width: 6rem;
+        height: 3rem;
+
+        /* background-color: #ccc; */
+      }
+      ul li img {
+        z-index: 999;
+      }
+      #box {
+        width: 100%;
+        height: 10rem;
+        /* border: black 2px solid; */
+        position: relative;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      #box1 {
+        width: 100%;
+        height: 10rem;
+        /* border: black 2px solid; */
+        position: relative;
+        position: absolute;
+        left: 0;
+        top: 13rem;
+        /* background-color: #ccc; */
+      }
+      #box2 {
+        width: 100%;
+        height: 10rem;
+        /* border: black 2px solid; */
+        position: relative;
+        position: absolute;
+        left: 0;
+        top: 25rem;
+        /* background-color: #ccc; */
+      }
+      #progress {
+        width: 0px;
+        height: 12rem;
+        background: #fff;
+      }
+      #progress1 {
+        width: 0px;
+        height: 12rem;
+        background: #fff;
+      }
+      #progress2 {
+        width: 0px;
+        height: 12rem;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="top">
+      <div class="left">
+        <a href="#"><img src="./img/logo.png" alt="" /></a>
+      </div>
+      <div class="right">
+        <div class="r"><img src="./img/icon-kf.png" alt="" /></div>
+        <div class="r2">
+          <a href="./yuyue.html""><img src="./img/btn-yuyue.png" alt="" /></a>
+        </div>
+        <div class="r3">
+          <a href="#"><img src="./img/menu.png" alt="" /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="m">
+        <ul>
+          <li>
+            <a href="chexing.html">全部车型</a>
+            <img src="./img/red-sanjiao.png" alt="" />
+          </li>
+          <li>
+            <a href="#">购车指南</a> <img src="./img/red-sanjiao.png" alt="" />
+          </li>
+          <li><a href="#">品牌故事</a></li>
+        </ul>
+      </div>
+      <div class="chexing">
+        <div class="cx">
+          <a href="cx3.html" style="color: #000">全部车型</a>
+        </div>
+        <div class="chex">
+          <ul>
+            <li>
+              <img src="./image/img-carstyle-1.png" alt="" />
+            </li>
+            <div id="box" class="box">
+              <p id="progress"></p>
+            </div>
+            <li><img src="./image/img-carstyle-2.png" alt="" /></li>
+            <div id="box1">
+              <p id="progress1"></p>
+            </div>
+            <li><img src="./image/img-carstyle-3.png" alt="" /></li>
+            <div id="box2">
+              <p id="progress2"></p>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="#top"><img src="./img/btn-top.png" alt="" /></a><br />
+      <span>WULING © 2020</span> <span>隐私和法律</span>
+      <br />
+      <span>前往了解宝骏汽车</span>
+      <span>媒体联系邮箱: ye.tang@sqmw.com.cn</span>
+      <br />
+      <span>桂ICP备05006817号</span>
+      <i><img src="./image/TB1jwakrbH1gK0jSZFwXXc7aXXa-20-20.png" alt="" /></i>
+      <span> 桂公网安备 45020402000143号 </span>
+    </footer>
+  </body>
+</html>
+<script>
+  $(function () {
+    $(".r3 a").click(function () {
+      $(".m").slideToggle();
+    });
+  });
+</script>
+<script>
+  //通过id获取元素
+  var progress = document.getElementById("progress");
+  //定义函数，并用元素的单击事件触发函数
+  box.onclick = function () {
+    var w = 0;
+    var t = setInterval(function () {
+      w += 10;
+      if (w >= 100) {
+        w = 100;
+        clearInterval(t);
+      }
+      progress.style.width = w + "%"; //给元素赋值变化后的宽度
+    }, 100); //每隔0.1秒执行一次
+  };
+  box1.onclick = function () {
+    var w = 0; //定义变量，用来存储进度条的长度
+    //启动定时器
+    var t = setInterval(function () {
+      w += 10; //每隔指定时间，让进度条长度增加10
+      if (w >= 100) {
+        //判断进度条的长度有没有等于或大于指定长度
+        w = 100;
+        clearInterval(t); //条件成立，清除定时器
+      }
+      progress1.style.width = w + "%"; //给元素赋值变化后的宽度
+    }, 100); //每隔0.1秒执行一次
+  };
+  box2.onclick = function () {
+    var w = 0; //定义变量，用来存储进度条的长度
+    //启动定时器
+    var t = setInterval(function () {
+      w += 10; //每隔指定时间，让进度条长度增加10
+      if (w >= 100) {
+        //判断进度条的长度有没有等于或大于指定长度
+        w = 100;
+        clearInterval(t); //条件成立，清除定时器
+      }
+      progress2.style.width = w + "%"; //给元素赋值变化后的宽度
+    }, 100); //每隔0.1秒执行一次
+  };
+</script>
