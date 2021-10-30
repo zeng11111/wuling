@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 100px;
+    height: 28rem;
+}
+header{
+    width: 100%;
+    height: .6rem;
+    position: relative;
+}
+#one img{
+    width: 28%;
+    height: .2rem;
+    line-height: .6rem;
+    float: left;
+    padding: .2rem .2rem;
+}
+#one  a img{
+    display: block;
+}
+#two{
+    width: 18%;
+    height: .6rem;
+    float: left;
+}
+#two img{
+    display: block;
+    float: left;
+    padding: .2rem .4rem;
+}
+#there{
+    width: 30%;
+    height: .6rem;
+    float: left;
+}
+#there img{
+    width: 100%;
+    height: .25rem;
+    padding: .2rem 0rem;
+    display: block;
+}
+#for img{
+    width: 12.8%;
+    height: .6rem;
+    float: left;
+}
+#for  a img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.h>a{
+    font-size: .18rem;
+}
+.p-1{
+    width: 100%;
+    height: .5rem;
+    font-size: .015rem;
+    color: #ccc;
+    line-height: .5rem;
+    text-align: center;
+}
+
+#p-1{
+    color: black;
+    text-align: center;
+    font-size: .2rem;
+}
+.p-2{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 3.5rem;
+    background: url(../img/cl-1.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 轮播图 */
+  .swiper-slide {
+    text-align: center;
+    font-size: .15rem;
+    background: #fff;
+  }
+.swiper-button-next,.swiper-button-prev{
+     color: #d6d6d6 !important;
+} 
+  .d{
+      font-size: .5rem;
+      color: #ccc;
+      text-align: center;
+  }
+  /* 第三部分 */
+  .b-1{
+    width: 100%;
+    height: 2rem;
+    background: url(../img/cl-2.png) no-repeat;
+    background-size: 100% 100%;
+    animation: fly linear 5s infinite 5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fly{
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+  .b-2{
+      width: 100%;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      margin-top: -.5rem;
+  }
+  .b-2>img{
+      width: 50%;
+      height: .3rem;  
+      margin-left: .2rem;
+      
+  }
+.b-3{
+    width: 100%;
+    height: 1rem;
+    background: url(../imges/brand-3.png) no-repeat;
+    background-size: 100% 100%;
+}
+.p-3{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 3.5rem;
+    background: url(../img/cl-5.png) no-repeat;
+    background-size: 100% 100%;
+}
+.dyh{
+    width: 100%;
+    height: 2.5rem;
+    background-color: #F3F3F3;
+}
+.dy{
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+.yh{
+    width: 100%;
+    height: 1.2rem;
+    font-size: .10rem;
+    line-height: .25rem;
+    text-align: center;
+}
+/* 品牌前景战略 */
+.p-4{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 3.5rem;
+    background: url(../img/cl-9.png) no-repeat;
+    background-size: 100% 100%;
+}
+.p-5{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 3.5rem;
+    background: url(../img/cl-10.png) no-repeat;
+    background-size: 100% 100%;
+}
+.p-6{
+    width: 100%;
+    height: 2.5rem;
+    line-height: 3.5rem;
+    background: url(../img/cl-11.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 页脚 */
+footer{
+    height: 2rem;
+    line-height: .35rem;
+    font-size: .13rem;
+    text-align: center;
+    margin-top: 8rem;
+    font-family: '微软雅黑';
+}
+a>img{
+    width: .5rem;
+    height: .5rem;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .d1 {
+            /* 最大容器 */
+            width: 100%;
+            margin: 10rem auto;
+        }
+
+        .tab_list {
+            height: 10rem;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .tab_list li {
+            float: left;
+            width: 30%;
+            height: 10rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+       .current {
+          
+            background: url(../img/hui-tip.png) none;
+            background-size: 10px 15px;  
+        }
+
+        .item {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class='d1'>
+        <div class='tab_list'>
+            <ul>
+                <li class='current'><img src="../img/jh (1).png" alt=""></li>
+                <li>联系方式</li>
+                <li>我的博客</li>
+            </ul>
+        </div>
+        <div class="tab_con">
+            <div class="item" style="display: block;">
+                <a href="https://user.qzone.qq.com/1479898695/infocenter">QQ空间</a>
+            </div>
+            <div class="item">
+                Harris
+            </div>
+            <div class="item">
+                <a href="https://blog.csdn.net/weixin_45750972">Harris's blog</a>
+            </div>
+            <div class="item">
+                哇哦,我还是太菜了
+            </div>
+            <div class="item">
+                ................
+            </div>
+
+        </div>
+</body>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<script>
+    $(function () {
+        $('.tab_list li').click(function () {
+            $(this).addClass("current").siblings().removeClass("current");
+            var idx = $(this).index();
+            $('.tab_con .item').eq(idx).show().siblings().hide();
+        });
+    })
+</script>
+
+</html>

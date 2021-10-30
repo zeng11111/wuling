@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="../css/gcym.css">
+</head>
+
+<body>
+  <header id="top">
+    <div class="left">
+      <a href="#"><img src="../img/logo.png" alt="" /></a>
+    </div>
+    <div class="right">
+      <div class="r"><img src="../img/icon-kf.png" alt="" /></div>
+      <div class="r2">
+        <a href="#"><img src="../img/btn-yuyue.png" alt="" /></a>
+      </div>
+      <div class="r3">
+        <a href="#"><img src="../imges/menu.png" alt="" /></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="m">
+      <ul>
+        <li>
+          <a href="yuyue.html">全部车型</a>
+          <img src="../img/red-sanjiao.png" alt="" />
+        </li>
+        <li>
+          <a href="../html/gcym.html">购车指南</a> <img src="../img/red-sanjiao.png" alt="" />
+        </li>
+        <li><a href="../html/ppgs.html">品牌故事</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="g"><img src="../img/wlhg.gif" alt="" height=".9rem"></p>
+    </div>
+    <div class="d-1">
+      <p class="c-1">在线订车 &nbsp;<img src="../img/red-sanjiao.png" alt="" width="2%" height="80%"></p>
+    </div>
+    <div class="d-2">
+      <p class="c-1">车贷服务 &nbsp;<img src="../img/red-sanjiao.png" alt="" width="2%" height="80%"></p>
+    </div>
+    <div class="d-3">
+      <p class="c-1">经销商查询 &nbsp;<img src="../img/red-sanjiao.png" alt="" width="2%" height="80%"></p>
+    </div>
+  </main>
+  <footer>
+    <a href="#top"><img src="../imges/btn-top.png" alt="" /></a><br />
+    <span>WULING © 2020</span> <span>隐私和法律</span>
+    <br />
+    <span>前往了解宝骏汽车</span>
+    <span>媒体联系邮箱: ye.tang@sqmw.com.cn</span>
+    <br />
+    <span>桂ICP备05006817号</span>
+    <i><img src="../img/jh (1).png" alt="" /></i>
+    <span> 桂公网安备 45020402000143号 </span>
+  </footer>
+</body>
+
+</html>
+<script>
+  $(function () {
+    $(".r3 a").click(function () {
+      $(".m").slideToggle();
+    });
+  });
+</script>
